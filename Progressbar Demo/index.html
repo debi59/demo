@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Progress Bar Demo</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Progress Bar Demo</h1>
+	<div class="sliders">
+	<div class="progress-bar  progress-bar--red" data-percent="25%">
+		<span class="progress-bar__slide"></span>
+		<span class="progress-bar__percent"></span>
+	</div>
+	<div class="progress-bar  progress-bar--blue" data-percent="50%">
+		<span class="progress-bar__slide"></span>
+		<span class="progress-bar__percent"></span>
+	</div>
+	<div class="progress-bar  progress-bar--green" data-percent="75%">
+		<span class="progress-bar__slide"></span>
+		<span class="progress-bar__percent"></span>
+	</div>
+	
+	</div>
+  <select id="Select1" name="D1">
+        <option>#Progress1</option>
+         <option>#Progress2</option>
+          <option>#Progress3</option>
+    </select>
+ <input id="btn1" type="button" value="-25" onclick="ShowDemo25M('-25');return false;" />
+    <input id="btn2" type="button" value="-10" onclick="ShowDemo25M('-10');return false;" />
+    <input id="btn3" type="button" value="+10"  onclick="ShowDemo25M('+10');return false;"/>
+    <input id="btn4" type="button" value="+25" onclick="ShowDemo25M('+25');return false;" />
+<script src="scripts.js"></script>
+</body>
+</html>
